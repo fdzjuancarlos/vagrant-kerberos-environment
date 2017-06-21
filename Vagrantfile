@@ -22,8 +22,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     client.vm.guest = :windows
     
     client.vm.communicator = "winrm"
-    client.winrm.username = "IEUser"
-    client.winrm.password = "Passw0rd!"
+    client.winrm.username = "vagrant"
+    client.winrm.password = "vagrant"
 
     client.vm.provider "virtualbox" do |v|
       v.gui = true
